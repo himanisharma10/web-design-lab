@@ -1,42 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Computer Science Engineering Books - Catalogue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Column HTML Page</title>
   <style>
+    /* CSS to make the page responsive and look better */
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
+      font-family: sans-serif;
     }
 
-    .book {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 20px;
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
+    .book-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .book-image {
+      width: 150px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .book-info {
+      flex: 1;
+    }
+
+    .book-price {
+      text-align: right;
+    }
+
+    .add-to-cart-button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-  <h2>Computer Science Engineering Books</h2>
-
-  <div class="book">
-    <h3>Introduction to Algorithms</h3>
-    <p>An essential guide to algorithms and data structures.</p>
-  </div>
-
-  <div class="book">
-    <h3>Operating System Concepts</h3>
-    <p>Covers the fundamental concepts of operating systems.</p>
-  </div>
-
-  <div class="book">  
-    <h3>Database Management Systems</h3>
-    <p>Learn about designing, implementing, and managing databases.</p>
-  </div>
-
-  <div class="book">
-    <h3>Artificial Intelligence: A Modern Approach</h3>
-    <p>An in-depth exploration of AI concepts and techniques.</p>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Book ISO Code</th>
+          <th>Author</th>
+          <th>Publication</th>
+          <th>Price</th>
+          <th>Add To Cart</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://m.media-amazon.com/images/I/41VLx3U7KiL._SY445_SX342_.jpg" class="book-image"></td>
+          <td>1234567890</td>
+          <td>Author 1</td>
+          <td>Publication 1</td>
+          <td>$100</td>
+          <td><button class="add-to-cart-button">Add To Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="https://example.com/book-2.jpg" class="book-image"></td>
+          <td>9876543210</td>
+          <td>Author 2</td>
+          <td>Publication 2</td>
+          <td>$200</td>
+          <td><button class="add-to-cart-button">Add To Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="https://example.com/book-3.jpg" class="book-image"></td>
+          <td>0123456789</td>
+          <td>Author 3</td>
+          <td>Publication 3</td>
+          <td>$300</td>
+          <td><button class="add-to-cart-button">Add To Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="https://example.com/book-4.jpg" class="book-image"></td>
+          <td>9012345678</td>
+          <td>Author 4</td>
+          <td>Publication 4</td>
+          <td>$400</td>
+          <td><button class="add-to-cart-button">Add To Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="https://example.com/book-5.jpg" class="book-image"></td>
+          <td>8901234567</td>
+          <td>Author 5</td>
+          <td>Publication 5</td>
+          <td>$500</td>
+          <td><button class="add-to-cart-button">Add To Cart</button></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
